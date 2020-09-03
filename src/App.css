@@ -36,3 +36,29 @@
     transform: rotate(360deg);
   }
 }
+.body {
+  margin: o;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.form {
+  position: relative;
+  width: 450px;
+  min-height: 300px;
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius: 14px;
+  padding: 10px;
+}
+.form h1 {
+  text-align: center;
+}
+.form input[type="submit"] {
+  background: #fff;
+  color: rgb(0, 0, 0);
+  max-width: 80px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
+}
