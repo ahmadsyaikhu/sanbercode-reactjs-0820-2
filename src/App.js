@@ -1,51 +1,23 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import Form from "./tugas-9/form";
+import Tabel from "./tugas-10/tabel";
 
 function App() {
+  let dataHargaBuah = [
+    { nama: "Semangka", harga: 10000, berat: 1000 },
+    { nama: "Anggur", harga: 40000, berat: 500 },
+    { nama: "Strawberry", harga: 30000, berat: 400 },
+    { nama: "Jeruk", harga: 30000, berat: 1000 },
+    { nama: "Mangga", harga: 30000, berat: 500 },
+  ];
   return (
-    <div className="body">
-      <div className="form">
-        <h1>Form pembelian Buah</h1>
-        <table>
-          <tr>
-            <th>
-              <label style={{ fontWeight: "bold" }}>Nama Pelanggan : </label>
-            </th>
-            <th>
-              <input type="teks" />
-            </th>
-          </tr>
-          <tr>
-            <th>
-              <label style={{ fontWeight: "bold" }}>Daftar Item : </label>
-            </th>
-            <td>
-              <input type="checkbox" />
-              <label>Semangka</label>
-              <br />
-              <input type="checkbox" />
-              <label>Jeruk</label>
-              <br />
-              <input type="checkbox" />
-              <label>Nanas</label>
-              <br />
-              <input type="checkbox" />
-              <label>Salak</label>
-              <br />
-              <input type="checkbox" />
-              <label>Anggur</label>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type="submit" value="Kirim"></input>
-            </td>
-            <td></td>
-          </tr>
-        </table>
-      </div>
-    </div>
+    <>
+      <Form />
+      {/* {data.map((el) => {
+        return <Tabel item={el} />;
+      })} */}
+    </>
   );
 }
 
